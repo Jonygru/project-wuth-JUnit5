@@ -2,21 +2,16 @@ package ru.ibs.appline.tests;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.RepeatedTest;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 import ru.ibs.appline.base.BaseTests;
-import ru.ibs.appline.pegaobject.DMSPage;
-import ru.ibs.appline.pegaobject.FormPage;
-import ru.ibs.appline.pegaobject.HomePage;
-
-import java.util.stream.Stream;
+import ru.ibs.appline.pageobject.DMSPage;
+import ru.ibs.appline.pageobject.FormPage;
+import ru.ibs.appline.pageobject.HomePage;
 
 public class ParametrizedFirstTest extends BaseTests {
     @ParameterizedTest
-//    @DisplayName("Параметризованная проверка отображения ошибки при не корректном вводе поля Email")
+    @DisplayName("Параметризованная проверка отображения ошибки при не корректном вводе поля Email")
     @MethodSource("ru.ibs.appline.data.DataClass#argForFirstParametrazedTests")
     public void test(String fio, String phone, String mail, String town) {
 

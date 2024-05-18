@@ -1,4 +1,4 @@
-package ru.ibs.appline.pegaobject;
+package ru.ibs.appline.pageobject;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

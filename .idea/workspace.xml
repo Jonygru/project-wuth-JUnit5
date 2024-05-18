@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d40b1867-b19b-4952-b79a-787bf9f04d15" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ibs/appline/base/BaseTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ibs/appline/data/DataClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ibs/appline/pegaobject/DMSPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ibs/appline/pegaobject/FormPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ibs/appline/pegaobject/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ibs/appline/tests/FirstTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ibs/appline/tests/ParametrizedFirstTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="d40b1867-b19b-4952-b79a-787bf9f04d15" name="Changes" comment="Finish two test case. First default test, second parametrized test">
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ibs/appline/tests/ParametrizedFirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ibs/appline/tests/ParametrizedFirstTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +43,7 @@
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Asus/IdeaProjects/project-wuth-JUnit5/src/main/java/ru/ibs/appline/Main.java&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.FirstTest.test">
+  <component name="RunManager" selected="JUnit.ParametrizedFirstTest.test">
     <configuration name="FirstTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project-wuth-JUnit5" />
       <extension name="coverage">
@@ -86,8 +78,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FirstTest.test" />
         <item itemvalue="JUnit.ParametrizedFirstTest.test" />
+        <item itemvalue="JUnit.FirstTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -100,6 +92,19 @@
       <option name="presentableId" value="Default" />
       <updated>1715886168865</updated>
     </task>
+    <task id="LOCAL-00001" summary="Finish two test case. First default test, second parametrized test">
+      <option name="closed" value="true" />
+      <created>1716039890536</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716039890536</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finish two test case. First default test, second parametrized test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish two test case. First default test, second parametrized test" />
   </component>
 </project>
