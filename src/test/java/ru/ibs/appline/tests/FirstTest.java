@@ -3,15 +3,10 @@ package ru.ibs.appline.tests;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import ru.ibs.appline.base.BaseTests;
-import ru.ibs.appline.pegaobject.DMSPage;
-import ru.ibs.appline.pegaobject.FormPage;
-import ru.ibs.appline.pegaobject.HomePage;
-
-import java.time.Duration;
+import ru.ibs.appline.pageobject.DMSPage;
+import ru.ibs.appline.pageobject.FormPage;
+import ru.ibs.appline.pageobject.HomePage;
 
 public class FirstTest extends BaseTests {
 
