@@ -19,12 +19,15 @@
         <!-- Java version-->
         <java.version>11</java.version>
 
+        <!-- Tag for start tests-->
+        <tag>NotParTest</tag>
+
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
 
         <!-- Dependencies version -->
         <junit-jupiter.version>5.10.0</junit-jupiter.version>
-        <junit-platform-launcher>1.10.0</junit-platform-launcher>
+        <junit-platform-launcher.version>1.10.0</junit-platform-launcher.version>
 
     </properties>
 
@@ -34,14 +37,12 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
             <version>${junit-jupiter.version}</version>
-            <scope>test</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-launcher -->
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-launcher</artifactId>
-            <version>${junit-platform-launcher}</version>
-            <scope>test</scope>
+            <version>${junit-platform-launcher.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
@@ -49,6 +50,9 @@
             <artifactId>selenium-java</artifactId>
             <version>LATEST</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
+
+
 
 
     </dependencies>
@@ -66,9 +70,7 @@
                 <version>3.0.0-M5</version>
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
-                    <includes>
-                        <include>Sample.java</include>
-                    </includes>
+
                 </configuration>
             </plugin>
         </plugins>

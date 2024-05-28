@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d40b1867-b19b-4952-b79a-787bf9f04d15" name="Changes" comment="Finish two test case. First default test, second parametrized test">
+    <list default="true" id="d40b1867-b19b-4952-b79a-787bf9f04d15" name="Changes" comment="Mini refactoring">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/framework/managers/DriverManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/framework/managers/PageManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/framework/managers/TestPropertiesManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/framework/pages/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/framework/pages/PageBasket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/framework/pages/PageCartProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/framework/pages/PageProductsAfterSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/framework/utils/Basket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/framework/utils/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/framework/utils/PropertiesConst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ibs/appline/tests/CheckPriceBasketTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ibs/appline/tests/ForTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ibs/appline/base/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ibs/appline/base/BaseTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ibs/appline/pageobject/DMSPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ibs/appline/pageobject/FormPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ibs/appline/pageobject/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ibs/appline/framework/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ibs/appline/tests/FirstTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/ibs/appline/tests/ParametrizedFirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ibs/appline/tests/ParametrizedFirstTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +35,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -34,17 +55,64 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Asus/IdeaProjects/project-wuth-JUnit5&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Asus/IdeaProjects/project-wuth-JUnit5/src/main/java/ru/ibs/appline/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "dev",
+    "last_opened_file_path": "C:/Users/Asus/IdeaProjects/project-wuth-JUnit5",
+    "onboarding.tips.debug.path": "C:/Users/Asus/IdeaProjects/project-wuth-JUnit5/src/main/java/ru/ibs/appline/Main.java"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.ParametrizedFirstTest.test">
-    <configuration name="FirstTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Asus\IdeaProjects\project-wuth-JUnit5\src\main\resources\webdriver" />
+      <recent name="C:\Users\Asus\IdeaProjects\project-wuth-JUnit5\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn mvn clean test -Dtype.browser=chrome" />
+      <command value="mvn clean test" />
+      <command value="mvn clean test -Dtype.browser=chromes" />
+      <command value="mvn clean test -Dtype.browser=chrome" />
+      <command value="mvn clean test -Dtest=FirstTest" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.CheckPriceBasketTest.testCheckPriceBasket">
+    <configuration name="CheckPriceBasketTest.testCheckPriceBasket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project-wuth-JUnit5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.ibs.appline.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.ibs.appline.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.ibs.appline.tests.CheckPriceBasketTest" />
+      <option name="METHOD_NAME" value="testCheckPriceBasket" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckPriceBasketTest.testForGettingErrorOnFieldMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project-wuth-JUnit5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.ibs.appline.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.ibs.appline.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.ibs.appline.tests.CheckPriceBasketTest" />
+      <option name="METHOD_NAME" value="testForGettingErrorOnFieldMail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project-wuth-JUnit5" />
       <extension name="coverage">
         <pattern>
@@ -54,13 +122,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.ibs.appline.tests" />
       <option name="MAIN_CLASS_NAME" value="ru.ibs.appline.tests.FirstTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParametrizedFirstTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest.testForGettingErrorOnFieldMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="project-wuth-JUnit5" />
       <extension name="coverage">
         <pattern>
@@ -69,8 +136,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.ibs.appline.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.ibs.appline.tests.ParametrizedFirstTest" />
-      <option name="METHOD_NAME" value="test(java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
+      <option name="MAIN_CLASS_NAME" value="ru.ibs.appline.tests.FirstTest" />
+      <option name="METHOD_NAME" value="testForGettingErrorOnFieldMail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ForTest.testForBasket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project-wuth-JUnit5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.ibs.appline.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.ibs.appline.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.ibs.appline.tests.ForTest" />
+      <option name="METHOD_NAME" value="testForBasket" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -78,8 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ParametrizedFirstTest.test" />
-        <item itemvalue="JUnit.FirstTest.test" />
+        <item itemvalue="JUnit.CheckPriceBasketTest.testCheckPriceBasket" />
+        <item itemvalue="JUnit.ForTest.testForBasket" />
+        <item itemvalue="JUnit.CheckPriceBasketTest.testForGettingErrorOnFieldMail" />
+        <item itemvalue="JUnit.FirstTest" />
+        <item itemvalue="JUnit.FirstTest.testForGettingErrorOnFieldMail" />
       </list>
     </recent_temporary>
   </component>
@@ -100,11 +186,27 @@
       <option name="project" value="LOCAL" />
       <updated>1716039890536</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Mini refactoring">
+      <option name="closed" value="true" />
+      <created>1716040294761</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716040294761</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finish two test case. First default test, second parametrized test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish two test case. First default test, second parametrized test" />
+    <MESSAGE value="Mini refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mini refactoring" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="((CheckPriceBasketTest)this).app" custom="ru.ibs.appline.tests.CheckPriceBasketTest" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
