@@ -4,46 +4,31 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import ru.ibs.appline.framework.managers.DriverManager;
+import ru.ibs.appline.framework.managers.PageManager;
+import ru.ibs.appline.framework.managers.TestPropertiesManager;
+import ru.ibs.appline.framework.utils.Basket;
 
-import java.time.Duration;
+
+import static ru.ibs.appline.framework.utils.PropertiesConst.BASE_URL;
+
 
 public class BaseTests {
 
 
-    public WebDriver getDriver() {
-        return driver;
-    }
+    private DriverManager driverManager = DriverManager.getDriverManager();
 
-    private WebDriver driver;
-
-
-
-    @BeforeAll()
-    public static void beforeAll(){
-        System.out.println("Стартанул тестсьют");
-    }
-
+    private TestPropertiesManager testPropertiesManager = TestPropertiesManager.getTestPropertiesManager();
+    protected PageManager app = PageManager.getPageManager();
     @BeforeEach()
     public void beforeEach(){
-        System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.get("https://www.rgs.ru");
-
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        driver.manage().window().maximize();
+        driverManager.getDriver().get(testPropertiesManager.getProperty(BASE_URL));
     }
 
-    @AfterEach()
-    public void afterEach(){
-        driver.quit();
-        System.out.println("\nБраузер закрылся");
-    }
+//    @AfterEach()
+//    public void afterEach(){
+//        driverManager.quitDriver();
+//    }
 
-    @AfterAll()
-    public static void afterAll(){
-        System.out.println("Завершился тестсьют");
-    }
+
 }
